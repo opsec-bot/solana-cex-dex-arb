@@ -1,0 +1,32 @@
+{
+  "name": "solana-cex-dex-arb",
+  "version": "0.1.0",
+  "description": "Measure CEX-DEX arbitrage on Solana: searchers, profits, concentration and which pools get picked off.",
+  "type": "module",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "bin": {
+    "arb": "src/cli.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "arb": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "solana",
+    "mev",
+    "arbitrage",
+    "cex-dex",
+    "jito"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
