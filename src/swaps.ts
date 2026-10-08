@@ -31,6 +31,8 @@ export interface ParsedTx {
   meta: {
     err: unknown;
     fee?: number;
+    preBalances?: number[];
+    postBalances?: number[];
     innerInstructions?: { index: number; instructions: ParsedIx[] }[] | null;
     preTokenBalances?: TokenBalance[] | null;
     postTokenBalances?: TokenBalance[] | null;
